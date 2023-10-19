@@ -16,6 +16,10 @@ def my_template():
     name = 'Paolo'
     return render_template('my_template.html', name=name)
 
+@app.route("/dynamic/<int:id>")
+def dynamic(id):
+    return render_template('dynamic.html', id=id)
+
 if __name__ == '__main__':
     app.run(debug=True)
     # app.run(host= '0.0.0.0', port=80)
