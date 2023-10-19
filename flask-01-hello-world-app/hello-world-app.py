@@ -6,7 +6,6 @@ app = Flask(__name__)
 def head():
     return 'Hello world Oktay'
 
-
 @app.route('/second')
 def second():
     return 'This is second page'
